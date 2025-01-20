@@ -78,7 +78,6 @@ img{
 footer{
     background-color: #130900;
     padding: 3%;
-    margin-top: 8%;
 }
 
 .text-footer{
@@ -116,12 +115,20 @@ a{
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
-
+    justify-content: center;
 }
 
-.favorite-image {
+@media (max-width:1100px) {
+    .container {
+      flex-direction: column;
+      justify-content:center;
+    }
+  }
+
+.favorite{
     width:350px;
     margin: 40px;
+}
+.favorite-image{
+    border-radius: 50%;
 }
